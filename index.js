@@ -1,6 +1,3 @@
-if (process.env.NODE_ENV !== "production") {
-  require('dotenv').config();
-}
 const admin = require("firebase-admin");
 const bodyParser = require("body-parser");
 const serviceAccount = require("./permissions.json");
