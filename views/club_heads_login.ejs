@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Club Head Login</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link href="assets/css/login-register.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <div class="login-wrap">
+      <div class="login-html">
+        <h3>Club Head Login</h3>
+        <div class="form">
+          <form class="sign-in-htm" method="POST" action="heads_login">
+            <div class="col mb-3">
+              <input type="email" id="email" placeholder="Email" autocomplete="username" name="email"/>
+            </div>
+            <div class="col mb-3">
+              <input
+                id="pass"
+                type="password"
+                data-type="password"
+                placeholder="Password"
+                autocomplete="current-password"
+                name="password"
+              />
+            </div>
+            <div class="col">
+              <input type="submit" class="button primary" value="Log In" />
+            </div>
+            <div class="hr"></div>
+            <div class="foot-lnk">
+              <a href="#forgot" class="button small">Forgot Password?</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

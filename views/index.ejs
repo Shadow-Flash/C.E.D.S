@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>C.E.D.S</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+      <link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header" class="alt">
+        <a href="/" class="logo"
+          ><strong>C.E.D.S</strong> <span>for clubs</span></a
+        >
+        <nav>
+          <a href="#menu">Menu</a>
+        </nav>
+      </header>
+
+      <!-- Menu -->
+      <nav id="menu">
+        <ul class="links">
+          <li><a href="c1"><%=clubNames[0]%></a></li>
+          <li><a href="club2"><%=clubNames[1]%></a></li>
+          <li><a href="club3"><%=clubNames[2]%></a></li>
+          <li><a href="club4"><%=clubNames[3]%></a></li>
+        </ul>
+        <ul class="actions stacked">
+          <% if(!currentUser) { %>
+          <li>
+            <a class="primary button fit" data-toggle="modal" href="login"
+              >Log in</a
+            >
+          </li>
+          <li><a href="signup" class="button fit">Sign Up</a></li>
+          <li>
+            <a class="primary button fit" data-toggle="modal" href="heads_login"
+              >Club Head Log in</a
+            >
+          </li>
+          <% } else { %>
+          <li>
+            <a class="primary button fit" data-toggle="modal" href="logout"
+              >Log Out</a
+            >
+          </li>
+          <% } %>
+        </ul>
+      </nav>
+
+      <!-- Banner -->
+      <section id="banner" class="major">
+        <div class="inner">
+          <header class="major">
+            <h1>College Events Dissemination System</h1>
+          </header>
+          <div class="content">
+            <p>
+              A simple interface for Spreading of various <br />
+              events scheduled by various clubs.
+            </p>
+            <ul class="actions">
+              <li><a href="#one" class="button next scrolly">CLUBS</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main -->
+      <div id="main" class="alt">
+        <!-- One -->
+        <section id="one" class="tiles">
+          <article>
+            <span class="image">
+              <img src="<%= src[0] %> " alt="" />
+            </span>
+            <header class="major">
+              <h3><a href="c1" class="link"><%= clubNames[0] %></a></h3>
+              <p><%= clubSlogan[0] %></p>
+            </header>
+          </article>
+          <article>
+            <span class="image">
+              <img src="<%= src[1] %>" alt="" />
+            </span>
+            <header class="major">
+              <h3><a href="club2" class="link"><%= clubNames[1] %></a></h3>
+              <p><%= clubSlogan[1] %></p>
+            </header>
+          </article>
+          <article>
+            <span class="image">
+              <img src="<%= src[2] %>" alt="" />
+            </span>
+            <header class="major">
+              <h3><a href="club3" class="link"><%= clubNames[2] %></a></h3>
+              <p><%= clubSlogan[2] %></p>
+            </header>
+          </article>
+          <article>
+            <span class="image">
+              <img src="<%= src[3] %>" alt="" />
+            </span>
+            <header class="major">
+              <h3><a href="club4" class="link"><%= clubNames[3] %></a></h3>
+              <p><%= clubSlogan[3] %>b</p>
+            </header>
+          </article>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <div class="alt">
+        <footer id="footer">
+          <div class="inner">
+            <div class="row" style="margin-top: 2em;">
+              <section
+                class="col"
+                style="border-right: solid 1px rgba(212, 212, 255, 0.1); margin-left:2em"
+              >
+                <span class="icon solid alt fa-envelope"></span>
+                <h3>Email</h3>
+                <a href="#">information@galgotiasuniversity.edu.in</a>
+              </section>
+              <section
+                class="col"
+                style="border-right: solid 1px rgba(212, 212, 255, 0.1)"
+              >
+                <span class="icon solid alt fa-phone"></span>
+                <h3>Message</h3>
+                <span>(+91) 8448063809</span>
+              </section>
+              <section class="col">
+                <span class="icon solid alt fa-home"></span>
+                <h3>Address</h3>
+                <span
+                  >Galgotias University<br />
+                  Greater Noida, Uttar Pradesh - 230245<br />
+                  INDIA
+                </span>
+              </section>
+            </div>
+            <hr />
+            <ul class="icons">
+              <li>
+                <a
+                  href="https://twitter.com/GalgotiasUni"
+                  class="icon brands alt fa-twitter"
+                  ><span class="label">Twitter</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/GalgotiasUniversity"
+                  class="icon brands alt fa-facebook-f"
+                  ><span class="label">Facebook</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/galgotias_university/"
+                  class="icon brands alt fa-instagram"
+                  ><span class="label">Instagram</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCi2dGtp1pcdYdnmwFzJWAAA"
+                  class="icon brands alt fa-youtube"
+                  ><span class="label">Youtube</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/galgotias-university-18544b190/"
+                  class="icon brands alt fa-linkedin-in"
+                  ><span class="label">LinkedIn</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
