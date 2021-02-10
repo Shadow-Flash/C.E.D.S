@@ -1,3 +1,4 @@
+// run vercel command to deploy after any changes
 const admin = require("firebase-admin");
 const bodyParser = require("body-parser");
 const serviceAccount = require("./permissions.json");
